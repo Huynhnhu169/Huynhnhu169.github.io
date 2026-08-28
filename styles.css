@@ -32,8 +32,8 @@ button { color: inherit; font: inherit; }
 .cylinder-edge--left { left: 0; background: radial-gradient(ellipse at left center, rgba(3,9,15,.68) 0, rgba(12,35,51,.34) 38%, transparent 76%); transform: translateX(calc(var(--scroll-bend, 0) * -1vw)); }
 .cylinder-edge--right { right: 0; background: radial-gradient(ellipse at right center, rgba(3,9,15,.68) 0, rgba(12,35,51,.34) 38%, transparent 76%); transform: translateX(calc(var(--scroll-bend, 0) * 1vw)); }
 .cursor-glow { position: fixed; width: 240px; height: 240px; border-radius: 50%; pointer-events: none; z-index: 1; transform: translate(-50%,-50%); background: radial-gradient(circle, rgba(116,160,255,.32), transparent 68%); filter: blur(16px); opacity: 0; transition: opacity .4s; }
-.hero { min-height: 100svh; position: relative; display: flex; align-items: flex-end; padding: 150px 4vw 105px; color: var(--ink); background: linear-gradient(to bottom, #c5e4f4 0%, #c5e4f4 82%, #efeee8 100%); overflow: hidden; isolation: isolate; transition: background .35s, color .35s; }
-#signal-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .7; }
+.hero { min-height: 100svh; position: relative; display: flex; align-items: flex-end; padding: 150px 4vw 105px; color: var(--ink); background-color: #c5e4f4; background-image: linear-gradient(to bottom, rgba(197,228,244,.08) 0%, rgba(197,228,244,.16) 72%, #efeee8 100%), url("assets/hero-signal-background.png"); background-size: cover; background-position: center; background-repeat: no-repeat; overflow: hidden; isolation: isolate; transition: background .35s, color .35s; }
+#signal-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .38; }
 .hero::before, .hero::after { content: ""; position: absolute; z-index: 0; pointer-events: none; }
 .hero::before { inset: 60px 50% 0; width: 1px; background: var(--line); }
 .hero::after { inset: 50% 0 auto; height: 1px; background: var(--line); }
@@ -53,7 +53,7 @@ button { color: inherit; font: inherit; }
 .hero__status { position: absolute; z-index: 3; bottom: 76px; left: 24px; margin: 0; font: 400 10px var(--mono); }
 .hero__status i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 7px; background: var(--lime); box-shadow: 0 0 12px var(--lime); }
 .hero__readout { position: absolute; z-index: 3; bottom: 20px; left: 24px; right: 24px; display: flex; justify-content: space-between; font: 400 10px var(--mono); }
-body[data-theme="dark"] .hero { color: #edf5f8; background: linear-gradient(to bottom, #182d3a 0%, #182d3a 82%, var(--paper) 100%); }
+body[data-theme="dark"] .hero { color: #edf5f8; background-color: #182d3a; background-image: linear-gradient(to bottom, rgba(12,28,38,.7) 0%, rgba(12,28,38,.76) 78%, var(--paper) 100%), url("assets/hero-signal-background.png"); }
 body[data-theme="dark"] .hero__intro { color: #edf5f8; }
 body[data-theme="dark"] .hud { color: #edf5f8; background: rgba(24,45,58,.84); border-color: rgba(255,255,255,.15); }
 .eyebrow { margin: 0; font: 500 11px var(--mono); letter-spacing: .06em; }
@@ -126,6 +126,7 @@ footer { min-height: 68px; display: flex; justify-content: space-between; align-
   .scroll-progress { top: 57px; }
   .scroll-progress.is-header-hidden { top: 0; }
   .hero { align-items: flex-end; padding: 230px 16px 110px; }
+  .hero { background-position: 46% center; }
   .hero__intro { top: 82px; left: 16px; grid-template-columns: 1fr; gap: 16px; }
   .hero__intro span { display: none; }
   .hero__bio { top: 82px; right: 16px; width: 46vw; font-size: 9px; }
