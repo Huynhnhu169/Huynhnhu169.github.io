@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Le Thi Huynh Nhu — AI engineer working across Vietnamese NLP, retrieval systems, computer vision and responsible evaluation.">
+  <meta name="theme-color" content="#c5e4f4">
+  <title>Le Thi Huynh Nhu — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+  <a class="skip-link" href="#work">Skip to selected work</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cylinder-edge cylinder-edge--left" aria-hidden="true"></div>
+  <div class="cylinder-edge cylinder-edge--right" aria-hidden="true"></div>
+
+  <header class="hud" aria-label="Site header">
+    <a class="hud__name" href="#top">Nhu Le Thi Huynh</a>
+    <nav class="hud__nav" aria-label="Primary navigation">
+      <a href="#work" data-nav="work">WORK</a>
+      <a href="#about" data-nav="about">ABOUT</a>
+      <a href="#contact" data-nav="contact">CONTACT</a>
+    </nav>
+    <div class="hud__controls">
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">THEME [L]</button>
+      <button class="sound" type="button" aria-pressed="false" aria-label="Toggle ambient sound indicator">SOUND [·]</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="signal-canvas" aria-hidden="true"></canvas>
+      <div class="hero__intro">
+        <strong>AI Engineering<br>&amp; Research</strong>
+        <span>Thinking in systems.<br>Evaluating with care.</span>
+      </div>
+      <p class="hero__bio">I'm Le Thi Huynh Nhu, building practical AI systems across Vietnamese NLP, retrieval and computer vision.</p>
+      <h1 id="hero-title"><span class="hero__line">I BUILD</span><span class="hero__line">INTELLIGENT</span><span class="hero__line hero__line--outline">SYSTEMS.</span></h1>
+      <figure class="hero__portrait">
+        <img src="assets/profile-nhu-lth.png" alt="Portrait of Le Thi Huynh Nhu" width="824" height="1096">
+        <figcaption>LE THI HUYNH NHU / 2026</figcaption>
+      </figure>
+      <p class="hero__status"><i></i> AVAILABLE FOR FRESHER &amp; ENTRY-LEVEL AI ROLES</p>
+      <div class="hero__readout" aria-hidden="true">
+        <span id="clock">GMT+7 VN --:--</span>
+        <span id="coords">0000 X&nbsp;&nbsp;0000 Y</span>
+        <span>SCROLL ↓</span>
+      </div>
+    </section>
+
+    <section class="manifesto" id="about" aria-labelledby="about-title">
+      <div class="manifesto__heading">
+        <p class="eyebrow">01 / ABOUT ME</p>
+        <h2 id="about-title">Research-minded.<br><em>Engineering-led.</em></h2>
+      </div>
+      <div class="manifesto__body">
+        <p class="manifesto__lead">I'm <strong>Le Thi Huynh Nhu</strong>, a final-year Artificial Intelligence student at FPT University Can Tho.</p>
+        <p class="manifesto__copy">I turn Vietnamese language, computer vision and retrieval problems into practical AI systems. My process emphasizes reproducible experiments, leakage-aware evaluation and clear evidence—not inflated claims.</p>
+      </div>
+      <div class="manifesto__grid">
+        <p>I enjoy working across the full AI workflow: preparing data, training and evaluating models, designing APIs, and building interfaces that make results easier to inspect and understand.</p>
+        <dl>
+          <div><dt>FOCUS</dt><dd>NLP / RAG / COMPUTER VISION</dd></div>
+          <div><dt>METHOD</dt><dd>REPRODUCIBLE, EVIDENCE-LED</dd></div>
+          <div><dt>TOOLS</dt><dd>PYTHON / PYTORCH / FASTAPI</dd></div>
+          <div><dt>STATUS</dt><dd>GRADUATING OCT 2026</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="eyebrow">02 / SELECTED SYSTEMS</p>
+        <h2 id="work-title">Built to be measured,<br>not merely demoed.</h2>
+      </div>
+
+      <div class="project-list">
+        <a class="project project--lime" href="https://github.com/Huynhnhu169/vietnamese-job-category-classifier" target="_blank" rel="noreferrer">
+          <span class="project__index">01</span>
+          <span class="project__title">Vietnamese Job<br>Intelligence</span>
+          <span class="project__meta">PHOBERT / HYBRID SEARCH / API<br>PERSONAL SYSTEM · 2026</span>
+          <span class="project__metric"><strong>38,106</strong> cleaned job posts<br><strong>56.61%</strong> macro-F1</span>
+          <span class="project__arrow">↗</span>
+        </a>
+        <a class="project project--violet" href="https://github.com/Huynhnhu169/Emotion_Recognition" target="_blank" rel="noreferrer">
+          <span class="project__index">02</span>
+          <span class="project__title">Speech Emotion<br>Recognition</span>
+          <span class="project__meta">CNN-LSTM / AUDIO ML<br>RESEARCH SOFTWARE · 2026</span>
+          <span class="project__metric"><strong>242-D</strong> acoustic features<br>Leakage-aware redesign</span>
+          <span class="project__arrow">↗</span>
+        </a>
+        <a class="project project--cyan" href="https://github.com/Huynhnhu169/vietnamese-stock-news-rag" target="_blank" rel="noreferrer">
+          <span class="project__index">03</span>
+          <span class="project__title">Vietnamese Stock<br>News RAG</span>
+          <span class="project__meta">LABSE / FAISS / BM25 / GEMINI<br>PERSONAL PROJECT · 2026</span>
+          <span class="project__metric"><strong>Hybrid</strong> retrieval<br>Source-grounded answers</span>
+          <span class="project__arrow">↗</span>
+        </a>
+        <a class="project project--orange" href="https://github.com/Huynhnhu169/caro7x7-dqn-agent" target="_blank" rel="noreferrer">
+          <span class="project__index">04</span>
+          <span class="project__title">Caro 7×7<br>DQN Agent</span>
+          <span class="project__meta">PYTORCH / REINFORCEMENT LEARNING<br>COURSE PROJECT · 2026</span>
+          <span class="project__metric"><strong>CNN DQN</strong><br>Replay + action masking</span>
+          <span class="project__arrow">↗</span>
+        </a>
+        <article class="project project--pink project--private">
+          <span class="project__index">05</span>
+          <span class="project__title">VIETRAG<br>Project</span>
+          <span class="project__meta">BGE-M3 / BM25 / RRF / RERANKING<br>PRIVATE RESEARCH SYSTEM · 2026</span>
+          <span class="project__metric"><strong>1,544</strong> validation queries<br>Context-disjoint evaluation</span>
+          <span class="project__badge">PRIVATE</span>
+        </article>
+        <article class="project project--yellow project--private">
+          <span class="project__index">06</span>
+          <span class="project__title">CVio: Shrimp<br>Disease Detection</span>
+          <span class="project__meta">YOLO11N-SEG / ANDROID / TFLITE<br>ACADEMIC CAPSTONE · 2026</span>
+          <span class="project__metric"><strong>Mobile AI</strong><br>Segmentation + edge inference</span>
+          <span class="project__badge">PRIVATE</span>
+        </article>
+        <article class="project project--blue project--private">
+          <span class="project__index">07</span>
+          <span class="project__title">NeuroWave:<br>Parkinson's EEG</span>
+          <span class="project__meta">MNE-PYTHON / CNN-LSTM / AST<br>ACADEMIC TEAM PROJECT · 2025</span>
+          <span class="project__metric"><strong>31</strong> subjects<br>Subject-aware evaluation</span>
+          <span class="project__badge">PRIVATE</span>
+        </article>
+      </div>
+
+      <div class="archive">
+        <p class="eyebrow">MORE PUBLIC EXPERIMENTS</p>
+        <a href="https://github.com/Huynhnhu169/2048_ai_solver" target="_blank" rel="noreferrer"><span>2048 AI Solver</span><span>EXPECTIMAX / HEURISTICS · 2026 ↗</span></a>
+        <a href="https://github.com/Huynhnhu169/Steam_games_recommendation" target="_blank" rel="noreferrer"><span>Steam Games Recommender</span><span>KNN / COLLABORATIVE FILTERING · 2026 ↗</span></a>
+      </div>
+    </section>
+
+    <section class="research" id="research" aria-labelledby="research-title">
+      <p class="eyebrow">03 / RESEARCH</p>
+      <h2 id="research-title">Research is how I<br><span>pressure-test</span> ideas.</h2>
+      <div class="papers">
+        <article>
+          <p>FIRST AUTHOR · ICETM</p>
+          <h3>The Rapid Development of AI and Its Impact on Technologically Lagging Students</h3>
+          <a href="https://doi.org/10.1145/3711403.3711446" target="_blank" rel="noreferrer">DOI / 2025 ↗</a>
+        </article>
+        <article>
+          <p>CO-AUTHOR · AUDIO ML</p>
+          <h3>Emotion Recognition in Speech Using CNN-LSTM Networks</h3>
+          <a href="https://doi.org/10.64632/jsde.39.2026.935" target="_blank" rel="noreferrer">JOURNAL / 2026 ↗</a>
+        </article>
+        <article>
+          <p>FIRST AUTHOR · PUBLICATION PENDING</p>
+          <h3>Attention-Enhanced YOLO-Nano for Adverse Weather Object Detection</h3>
+          <span>CSONET / PRESENTED 2025</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">04 / CONTACT</p>
+      <h2 id="contact-title">LET'S BUILD<br>SOMETHING<br><span>USEFUL.</span></h2>
+      <a class="contact__email" href="mailto:nhuhuynhlethi1508@gmail.com">nhuhuynhlethi1508@gmail.com ↗</a>
+      <div class="contact__links">
+        <a href="https://github.com/Huynhnhu169" target="_blank" rel="noreferrer">GITHUB ↗</a>
+        <a href="https://www.linkedin.com/in/nhu-le-thi-huynh-947736218" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+        <a href="mailto:nhuhuynhlethi1508@gmail.com?subject=CV%20Request%20%E2%80%94%20Le%20Thi%20Huynh%20Nhu">REQUEST CV ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Nhu Le Thi Huynh</span>
+    <span>DESIGNED WITH CURIOSITY / BUILT WITH EVIDENCE</span>
+    <a href="#top">BACK TO TOP ↑</a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
